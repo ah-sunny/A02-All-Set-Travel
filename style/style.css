@@ -3,6 +3,7 @@
      /* ----navbar style---- */
 nav{
     display: flex;
+    display: none;
     justify-content: space-between;
     width: 80%;
     text-align: center;
@@ -40,10 +41,12 @@ nav{
 /* banner sttyle */
 
 .banner{
-    /* background-image: url("/Images/banner-img.png"); */
+    background-image:  linear-gradient(to  bottom, rgba(0, 0, 0, 0.7), rgba(0,0,0,0.2)),
+    url('/Images/banner-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 500px;
     width: 80%;
-    background-color: aqua;
     margin: 48px auto;
     border-radius: 16px;
     text-align: center;
@@ -65,14 +68,47 @@ nav{
 }
 .banner_input{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 15px;
-    /* margin: 15px; */
-    padding: 15px;
+    grid-template-columns: repeat(4,22%);
+    gap: 3%;
+    margin: 0;
+    padding: 2.3%;
     height: 40px;
-    background-color: rgb(195, 21, 21);
+    justify-content: center;
+    background-color: rgba(233, 216, 216, 0.417);
+    border-radius: 10px;
 } .banner > div{
     width: 55%;
+    /* background-color: #FF5400;  */
+}#text , #b_time, #b_type{
+    border-radius: 8px;
+    color: #ae9f9fec;
+}.btn_primary{
+    border-radius: 8px;
     background-color: #FF5400;
-    
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .banner{
+        height: auto;
+        width: 100%;
+        margin: auto;
+    }
+    .banner_heading{
+        font-size: 27px;
+    }.banner_discription{
+        font-size: 15px;
+        font-weight: lighter;
+    }.banner_input{
+        grid-template-columns: 1fr;
+        gap: 10px;
+        height: auto;
+        margin: 0;
+        padding: 5%;
+    }#text , #b_time, #b_type, .btn_primary{
+        height: 52px;
+    }.banner > div{
+        width: 100%;
+        margin: 5%;
+    }
 }
