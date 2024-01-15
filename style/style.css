@@ -216,3 +216,61 @@ nav{
 
 
 /* ------choose us */
+
+.choose{
+    width: 78%;
+    margin: 78px auto;
+}
+.choose h1{
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}.choose p{
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; 
+    margin-bottom: 24px;
+}
+
+.ch_first_row{
+    display: flex;
+    gap: 2%;
+    margin-bottom: 10px;
+}.ch_first_row .left{
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    width: 49%;
+    padding: 1%;
+}.ch_first_row .right{
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    width: 49%;
+    padding: 1%;
+}
+.ch_second_row{
+    display: flex;
+    justify-content: center;
+}.ch_second_row .price{
+    width: 53%;
+    padding: 1%;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+@media screen and (max-width: 600px){
+    .ch_first_row{
+        flex-direction: column;
+    }.ch_first_row .left, .ch_first_row .right, .ch_second_row .price{
+        width: 99%;
+    }
+
+}
