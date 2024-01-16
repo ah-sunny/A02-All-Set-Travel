@@ -332,6 +332,7 @@ nav{
     gap: 2%;
     align-items: center;
     height: 430px;
+    display: none;
 
 }
 .news_text{
@@ -447,6 +448,7 @@ border-radius: 16px;
     margin: 78px auto 0px auto;
     text-align: center;
     padding: 2% 7%;
+    display: none;
   }footer .heading img{
     height:2rem;
     width: 2rem;
@@ -476,3 +478,106 @@ border-radius: 16px;
     margin: 20px;
   }
 
+
+
+  /* deals------------ */
+
+.deals{
+    width: 80%;
+    margin: 78px auto;
+    text-align: center;
+}.deals h1{
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 1%;
+}.deals p{
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; 
+    margin-bottom: 2%;
+}
+
+
+
+
+  .de_one{
+    width: auto;
+    height: 350px;
+    /* background-color: aqua; */
+    /* background-image: url("Images/Group 39.png"); */
+    /* background-repeat: no-repeat;
+    background-size: 100% 100%; */
+
+    background-image:  linear-gradient(to  bottom, rgba(0, 0, 0, 0.7), rgba(0,0,0,0.2)),
+    url('/Images/Group 39.png');
+    border-radius: 16px;
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+
+  }
+  .de_one .text_box{
+    width: 40%;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    text-align: left;
+    padding: 2%;
+    height: 60%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  .de_one .text_box .time{
+    display: flex;
+    gap: 5%;
+    margin-bottom: 2%;
+  }.text_box h4{
+    color: #131318;
+    font-family: Mulish;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 1%;
+  }.text_box p{
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 1%;
+  } .text_box .price{
+    color: #FF5400;
+    font-family: Mulish;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 1%;
+  }.text_box button{
+    width: 20%;
+  }
+
+.de_two{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+} .de_two .text_box{
+    margin-left: 5%;
+}
+.de_two{
+    background-image:  linear-gradient(to  bottom, rgba(0, 0, 0, 0.7), rgba(0,0,0,0.2)),
+    url('/Images/Group 40.png');
+}
+.last_btn{
+    background-color: #FF5400;
+    padding: 1%;
+    color: #FFF;
+    border-radius: 16px;
+}
