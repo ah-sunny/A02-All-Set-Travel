@@ -581,3 +581,24 @@ border-radius: 16px;
     color: #FFF;
     border-radius: 16px;
 }
+
+@media screen and (max-width: 600px){
+    .de_one{
+        height: 550px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        justify-content: center;
+        align-items: end;
+    }.de_one .text_box{
+        height: 50%;
+        width: 80%;
+        margin:auto;
+        margin-bottom: 5%;
+    }.de_one .text_box .time{
+        gap: 2%;
+      }.text_box button{
+        width: 40%;
+        padding: 2%;
+      }
+
+}
