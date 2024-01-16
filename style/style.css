@@ -1,9 +1,11 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 
      /* ----navbar style---- */
 nav{
     display: flex;
-    display: none;
     justify-content: space-between;
     width: 80%;
     text-align: center;
@@ -15,9 +17,12 @@ nav{
 }.nav_title h1{
     color: #131318;
     font-family: Mulish;
-    font-size: 36px;
+    font-size: 2.5rem;
     font-weight: 800;
-    text-align: center;
+    
+}.nav_title img{
+    height: 2.8rem;
+    width: 2.8rem;
 }
 
 .nav_icon ul{
@@ -36,7 +41,33 @@ nav{
 }span{
     color: #FF5400;
 }
-
+.nav_icon {
+    position: relative;
+}.nav_icon .nav_dot{
+    
+    display: flex;
+    justify-content: right;
+    align-items: start;
+    display: none;
+}
+@media screen and (max-width: 600px){
+    .nav_icon .nav_dot{
+        display: block;
+    }.nav_icon ul{
+        display: none;
+    }.nav_title h1{
+        margin: 15px auto;
+        font-size: 28px;
+    }.nav{
+        width: 60%;
+        
+    }.nav_title img{
+        margin: 17px auto;
+        height: 32px;
+        width: 32px;
+    }
+    
+}
 
 /* banner sttyle */
 
@@ -92,8 +123,8 @@ nav{
 @media screen and (max-width: 600px) {
     .banner{
         height: auto;
-        width: 100%;
-        margin: auto;
+        width: 80%;
+        margin: 20px auto;
     }
     .banner_heading{
         font-size: 27px;
@@ -111,6 +142,8 @@ nav{
     }.banner > div{
         width: 100%;
         margin: 5%;
+    }#text , #b_time, #b_type{
+        padding-left: 12px;
     }
 }
 
@@ -218,7 +251,7 @@ nav{
 /* ------choose us */
 
 .choose{
-    display: none;
+    /* display: none; */
     width: 78%;
     margin: 78px auto;
 }
@@ -244,12 +277,14 @@ nav{
     gap: 2%;
     margin-bottom: 10px;
 }.ch_first_row .left{
+    text-align: left;
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
     width: 49%;
     padding: 1%;
 }.ch_first_row .right{
+    text-align: left;
     border-radius: 16px;
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
@@ -260,11 +295,21 @@ nav{
     display: flex;
     justify-content: center;
 }.ch_second_row .price{
+    text-align: left;
     width: 53%;
     padding: 1%;
     border-radius: 16px;
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
+}
+.ch_second_row .price h1 ,.ch_first_row .right h1, .ch_first_row .left h1{
+    text-align: left;
+}
+
+.ch_icon{
+    padding: 10px;
+    margin: 15px auto;
+
 }
 
 @media screen and (max-width: 600px){
@@ -391,10 +436,7 @@ border-radius: 16px;
         bottom: 33px;
     }
 }
-*{
-    margin: 0;
-    padding: 0;
-}
+
 
   /* ------ footer part style */
 
@@ -433,3 +475,4 @@ border-radius: 16px;
     font-weight: 300;
     margin: 20px;
   }
+
