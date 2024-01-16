@@ -245,6 +245,8 @@ nav{
     } .destination .second_row  {
         height: auto;
         margin-bottom: 23px;
+    }.sani{
+        height: 95%;
     }
 
 }
