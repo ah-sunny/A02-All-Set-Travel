@@ -204,13 +204,13 @@ nav{
     .first_row, .second_row, .third_row{
         grid-template-columns: 1fr;
         height: auto;
-    } 
-
-
+        /* gap: 90px; */
+    } .destination .second_row  {
+        height: auto;
+        margin-bottom: 23px;
+    }
 
 }
-
-
 
 
 
@@ -218,6 +218,7 @@ nav{
 /* ------choose us */
 
 .choose{
+    display: none;
     width: 78%;
     margin: 78px auto;
 }
@@ -274,3 +275,123 @@ nav{
     }
 
 }
+
+
+/* --------Newssletter part */
+
+.newsletter{
+    width: 80%;
+    text-align: center;
+    margin: 78px auto;
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    height: 430px;
+
+}
+.news_text{
+width: 38%;
+height: 90%;
+padding: 2%;
+border: 1px solid #FF5400;
+border-radius: 16px;
+    text-align: left;
+}.news_text h1{
+    color: #131318;
+    font-family: Mulish;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+.news_text p{
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 24px;
+}
+.news_form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin: 20px auto;
+}.news_form input[type="text"], .news_form input[type="email"], .news_form input[type="button"] {
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    height: 50px;
+    padding-left: 20px;
+}.news_form input[type="button"]{
+    border-radius: 8px;
+    background-color: #FF5400;
+    color: white;
+    padding: 10px;
+}
+
+
+
+.news_img{
+    width: 60%;
+    height: 100%;
+    position: relative;
+    
+}
+.news_trans{
+    border: 1px solid red;
+    border-radius: 16px;
+    /* transform: translate(230px, 320px) rotate(-30deg); */
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+
+    width: 50%;
+    height: 24%;
+    transform: rotate(-19.628deg);
+    flex-shrink: 0;
+    background-color: #FF5400;
+    text-align: center; 
+}
+.news_trans h3,.news_trans h1{
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 12px auto;
+}.news_trans h1{
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 29px;
+    font-weight: 800;
+    margin: 0px;
+}
+
+.news_back_img{
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+    background-image: url("/Images/Rectangle 8 (1).png");
+    background-size: 100% 100%;
+
+}
+
+@media screen and (max-width: 600px){
+    .newsletter{
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        gap: 25px;
+    }.news_text , .news_img{
+        width: 100%;
+    }
+    .news_back_img{
+        height: 430px;
+    }
+    .news_trans{
+        bottom: 33px;
+    }
+
+
+
+}
+   
